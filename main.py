@@ -10,7 +10,7 @@ turtle.shape(image)
 
 data_frame = pandas.read_csv("50_states.csv")
 states_list = data_frame.state.to_list()
-while states_list != []:
+while states_list:
     answer_state = screen.textinput(title=f'Guess the State{guess_count}/50',
                                     prompt="What's another state's name?").title()
     if answer_state == "Exit":
